@@ -11,7 +11,6 @@ import Mainlayout from "../layout/mainlayout";
 import NwssuMap from "../components/nwssuMap";
 import NwssuBuilding from "../components/nwssuBuilding";
 import NwssuUserGuide from "../components/nwssuUserguide";
-import App from "../components/sample";
 
 // Ccislayout
 import Ccislayout from "../layout/ccisLayout";
