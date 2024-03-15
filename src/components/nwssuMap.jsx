@@ -4,33 +4,14 @@ import Map from "../assets/Map.png";
 
 import { Button, Input, Space, Card, Dropdown, AutoComplete } from "antd";
 import { UpOutlined } from "@ant-design/icons";
-// import { InfoContext } from "../context/useContext";
+
 
 const NwssuMap = () => {
-  // const { handleCreatePath } = useContext(InfoContext);
-  // const [value, setValue] = useState("");
-  // const [options, setOptions] = useState([]);
-  // const mockVal = (str, repeat = 1) => ({
-  //   value: str.repeat(repeat),
-  // });
-
-  // const getPanelValue = (searchText) =>
-  //   !searchText
-  //     ? []
-  //     : [mockVal(searchText), mockVal(searchText, 2), mockVal(searchText, 3)];
-
-  // const onSelect = (data) => {
-  //   console.log("onSelect", data);
-  // };
-
-  // const onChange = (data) => {
-  //   console.log("onChange", data);
-  // };
-
+  
   return (
     <div className="relative">
-      <div className=" fixed ">
-        <img src={Map} alt="" style={{ width: "1315px", height: "775px" }} />
+      <div className=" absolute ">
+        <img src={Map} alt="" className="  h-screen w-fit" />
       </div>
       <div className=" mt-5 ml-5 absolute ">
         <Card
@@ -43,22 +24,11 @@ const NwssuMap = () => {
         >
           <div className="flex flex-col justify-center items-center content-center space-y-5 ">
             <div className="flex flex-row w-60 space-x-2">
-              <Input placeholder="Enter starting point" />
+              <Input placeholder="Enter Starting point" />
             </div>
             <div className="flex flex-row w-60 space-x-2">
-              <AutoComplete
-                // value={value}
-                // options={options}
-                style={{
-                  width: 240,
-                }}
-                // onSelect={onSelect}
-                // onSearch={(text) => setOptions(getPanelValue(text))}
-                // onChange={onChange}
-                placeholder="Enter Destination"
-              />
+              <Input placeholder="Enter Destination point" />
             </div>
-
             <Space>
               <Button
                 type="primary"
@@ -96,7 +66,7 @@ const NwssuMap = () => {
           </div>
         </div>
         <div
-          style={{ position: "fixed", marginTop: "557px", marginLeft: "30px" }}
+          style={{ position: "absolute", marginTop: "557px", marginLeft: "30px" }}
         >
           <div
             id="buttonB"
@@ -106,7 +76,7 @@ const NwssuMap = () => {
           </div>
         </div>
         <div
-          style={{ position: "fixed", marginTop: "535px", marginLeft: "300px" }}
+          style={{ position: "absolute", marginTop: "535px", marginLeft: "300px" }}
         >
           <div
             id="buttonC"
@@ -116,35 +86,35 @@ const NwssuMap = () => {
           </div>
         </div>
         <div
-          style={{ position: "fixed", marginTop: "530px", marginLeft: "548px" }}
+          style={{ position: "absolute", marginTop: "530px", marginLeft: "548px" }}
         >
           <div className="flex justify-center items-center text-center rounded-full w-7 h-7 bg-white font-bold hover:text-black text-black custom-button">
             D
           </div>
         </div>
         <div
-          style={{ position: "fixed", marginTop: "506px", marginLeft: "674px" }}
+          style={{position: "absolute", marginTop: "506px", marginLeft: "674px" }}
         >
           <div className="flex justify-center items-center text-center rounded-full w-7 h-7 bg-white font-bold hover:text-black text-black custom-button">
             E
           </div>
         </div>
         <div
-          style={{ position: "fixed", marginTop: "475px", marginLeft: "762px" }}
+          style={{position: "absolute", marginTop: "475px", marginLeft: "762px" }}
         >
           <div className="flex justify-center items-center text-center rounded-full w-7 h-7 bg-white font-bold hover:text-black text-black">
             F
           </div>
         </div>
         <div
-          style={{ position: "fixed", marginTop: "442px", marginLeft: "850px" }}
+          style={{ position: "absolute", marginTop: "442px", marginLeft: "850px" }}
         >
           <div className="flex justify-center items-center text-center rounded-full w-7 h-7 bg-white font-bold hover:text-black text-black">
             G
           </div>
         </div>
         <div
-          style={{ position: "fixed", marginTop: "490px", marginLeft: "900px" }}
+          style={{ position: "absolute", marginTop: "490px", marginLeft: "900px" }}
         >
           <div className=" flex justify-center items-center text-center rounded-full w-7 h-7 bg-white font-bold hover:text-black text-black">
             H
@@ -152,7 +122,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+           position: "absolute"
             marginTop: "560px",
             marginLeft: "950px",
           }}
@@ -163,7 +133,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+position: "absolute"
             marginTop: "585px",
             marginLeft: "870px",
           }}
@@ -174,7 +144,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+          position: "absolute"
             marginTop: "658px",
             marginLeft: "1067px",
           }}
@@ -185,7 +155,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+position: "absolute"
             marginTop: "574px",
             marginLeft: "1145px",
           }}
@@ -196,7 +166,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "577px",
             marginLeft: "1219px",
           }}
@@ -207,7 +177,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "519px",
             marginLeft: "1190px",
           }}
@@ -218,7 +188,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "440px",
             marginLeft: "1060px",
           }}
@@ -229,7 +199,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "409px",
             marginLeft: "993px",
           }}
@@ -240,7 +210,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "348px",
             marginLeft: "910px",
           }}
@@ -251,7 +221,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "303px",
             marginLeft: "825px",
           }}
@@ -262,7 +232,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "230px",
             marginLeft: "700px",
           }}
@@ -273,7 +243,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "200px",
             marginLeft: "525px",
           }}
@@ -284,7 +254,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "228px",
             marginLeft: "147px",
           }}
@@ -295,7 +265,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+          position: "absolute"
             marginTop: "415px",
             marginLeft: "110px",
           }}
@@ -306,7 +276,7 @@ const NwssuMap = () => {
         </div>
         <div
           style={{
-            position: "fixed",
+            position: "absolute"
             marginTop: "652px",
             marginLeft: "924px",
           }}
