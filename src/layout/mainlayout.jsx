@@ -111,19 +111,6 @@ const Mainlayout = () => {
                 />
               ),
             },
-            {
-              key: "/sample",
-              label: (
-                <span style={{ color: "white", fontFamily: "Poppins" }}>
-                  Sample
-                </span>
-              ),
-              icon: (
-                <LeftCircleFilled
-                  style={{ fontSize: "24px", color: "white" }}
-                />
-              ),
-            },
           ]}
         />
       </Sider>
